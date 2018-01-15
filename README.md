@@ -3,4 +3,4 @@ A data-to-advice pipeline system that leverages the Knowledge Grid to determine 
 
 Here is an overview:
 
-![alt text](https://raw.githubusercontent.com/ajflynn/kgrid/ScriptNumerate/ScriptNumerateOverview.v1.png)
+![alt text](https://github.com/kgrid/ScriptNumerate/ScriptNumerateOverview.v1.png)
