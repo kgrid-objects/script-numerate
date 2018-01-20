@@ -157,7 +157,7 @@ print $fh "rxdatasettitle = " . "['" . $datasetID . "']" . "\n";
 print $fh "daterangerx = " . "['" . $startDate . "','" . $endDate . "']" . "\n";
 print $fh "rxorganization = " . "['" . $organization . "']" . "\n";
 print $fh "rxlocation = " . "['" . $location . "']" . "\n";
-print $fh "rxpopulation = " . "['" . $population . "'}" . "\n";
+print $fh "rxpopulation = " . "['" . $population . "']" . "\n";
 #print $fh (@fdrxsigs);
 #print $fh (@fdrxfreqs);
 close $fh;
