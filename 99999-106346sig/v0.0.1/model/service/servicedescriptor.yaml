@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: 'ScriptNumerate 106346 sig'
+  description: 'Sigs for MUPIROCIN 2 % TOPICAL OINTMENT (106346)'
+servers:
+  - url: '/99999/106346sig/v0.0.1/'
+    description: Get 106346 Sigs
+tags:
+  - name: KO Endpoints
+    description: 104208 Endpoints
+paths:
+  /rxsigs:
+    post:
+      description: Compare Rx.
+      operationId: comparerx
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'
+components:
+  schemas:
+    input:
+      required:
+        - rxcui
+      properties:
+        rxcui:
+          type: string
+          example: '106346'
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: '{"rxcui":"106346":sigs:[]}'
+    error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
