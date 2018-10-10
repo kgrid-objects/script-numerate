@@ -18,6 +18,6 @@ This release contains four KOs, as listed.
 
 1. [MUPIROCIN 2 % TOPICAL OINTMENT](https://library.kgrid.org/#/object/99999%2F106346sig%2Fv0.0.1)
 
-1. [ACYCLOVIR 400 MG TABLET (197311)](https://library.kgrid.org/#/object/99999%2F197311sig%2Fv0.0.1)
+1. [ACYCLOVIR 400 MG TABLET](https://library.kgrid.org/#/object/99999%2F197311sig%2Fv0.0.1)
 
-1. [197319](https://library.kgrid.org/#/object/99999%2F197319sig%2Fv0.0.1)
+1. [ALLOPURINOL 100 MG TABLET](https://library.kgrid.org/#/object/99999%2F197319sig%2Fv0.0.1)
