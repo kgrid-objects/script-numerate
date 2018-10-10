@@ -1,7 +1,8 @@
-# Script Numerate Knowledge Objects
+# Script Numerate Collection
 [![GitHub release](https://img.shields.io/github/release/kgrid-objects/script-numerate.svg)](https://github.com/kgrid-objects/script-numerate/releases/)
 
-# ScriptNumerate
+## Overview
+
 A data-to-advice pipeline system that leverages the Knowledge Grid to determine whether a prescription ordered in the hospital has a common, rare, or unprecedented "Sig"
 
 Here is an overview:
@@ -19,4 +20,4 @@ This release contains four KOs, as listed.
 
 1. [ACYCLOVIR 400 MG TABLET (197311)](https://library.kgrid.org/#/object/99999%2F197311sig%2Fv0.0.1)
 
-1. [ALLOPURINOL 100 MG TABLET](https://library.kgrid.org/#/object/99999%2F197319sig%2Fv0.0.1)
+1. [197319](https://library.kgrid.org/#/object/99999%2F197319sig%2Fv0.0.1)
