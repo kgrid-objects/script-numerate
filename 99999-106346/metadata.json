@@ -1,0 +1,18 @@
+{
+  "@id": "99999-106346",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/99999/106346",
+  "title": "ScriptNumerate 106346",
+  "contributors": "KGRID TEAM",
+  "desription": "Prescribing Pattern for MUPIROCIN 2 % TOPICAL OINTMENT (106346)",
+  "citations": [
+    "https://citationlink"
+  ],
+  "keywords": "ScriptNumerate",
+  "hasImplementation": [
+    "99999-106346/v0.0.2"
+  ],
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

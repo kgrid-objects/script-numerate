@@ -1,0 +1,14 @@
+{
+  "@id": "v0.0.2",
+  "@type": "koio:Implementation",
+  "identifier": "v0.0.2",
+  "title": "ScriptNumerate 197311 Implementation",
+  "description": "Prescribing Pattern for ACYCLOVIR 400 MG TABLET (197311)",
+  "keywords": "ScriptNumerate",
+  "hasServiceSpecification": "v0.0.2/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
+  "hasPayload": "v0.0.2/rxcompare.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

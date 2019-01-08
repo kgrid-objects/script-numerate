@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: ScriptNumerate 106346
+  description: Prescribing Pattern for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
+servers:
+  - url: /99999/106346/v0.0.2
+    description: Compare 106346 Rx
+tags:
+  - name: KO Endpoints
+    description: 106346 Endpoints
+paths:
+  /rxcompare:
+    post:
+      description: Compare Rx.
+      operationId: comparerx
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'
+components:
+  schemas:
+    input:
+      required:
+        - rxdata
+      properties:
+        rxdata:
+          type: string
+          example: 1 APPLICATION 4 TIMES DAILY
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: >-
+            RESULT:RARE --SUMMARY: 1 APPLICATION 4 TIMES DAILY is rare within
+            102 presriptions on file ---FREQUENCY = 0.01
+    error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

@@ -1,0 +1,14 @@
+{
+  "@id": "v0.0.2",
+  "@type": "koio:Implementation",
+  "identifier": "v0.0.2",
+  "title": "ScriptNumerate 104208 Implementation",
+  "description": "Prescribing Pattern for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)",
+  "keywords": "ScriptNumerate",
+  "hasServiceSpecification": "v0.0.2/service-specification.yaml",
+  "hasDeploymentSpecification": "v0.0.2/deployment-specification.yaml",
+  "hasPayload": "v0.0.2/rxcompare.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}

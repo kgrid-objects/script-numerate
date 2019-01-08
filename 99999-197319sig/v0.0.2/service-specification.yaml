@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: ScriptNumerate 197319 sig
+  description: Sigs for ALLOPURINOL 100 MG TABLET (197319)
+servers:
+  - url: /99999/197319sig/v0.0.2
+    description: Get 197319 Sigs
+tags:
+  - name: KO Endpoints
+    description: 197319 Endpoints
+paths:
+  /rxsigs:
+    post:
+      description: Compare Rx.
+      operationId: comparerx
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'
+components:
+  schemas:
+    input:
+      required:
+        - rxcui
+      properties:
+        rxcui:
+          type: string
+          example: '197319'
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: '{"rxcui":"197319":sigs:[]}'
+    error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: ScriptNumerate 197311
+  description: Prescribing Pattern for ACYCLOVIR 400 MG TABLET (197311)
+servers:
+  - url: /99999/197311/v0.0.2
+    description: Compare 197311 Rx
+tags:
+  - name: KO Endpoints
+    description: 197311 Endpoints
+paths:
+  /rxcompare:
+    post:
+      description: Compare Rx.
+      operationId: comparerx
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'
+components:
+  schemas:
+    input:
+      required:
+        - rxdata
+      properties:
+        rxdata:
+          type: string
+          example: 800 MG ONCE DAILY
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: >-
+            RESULT:RARE --SUMMARY: 800 MG ONCE DAILY is rare within 141
+            presriptions on file ---FREQUENCY = 0.01
+    error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

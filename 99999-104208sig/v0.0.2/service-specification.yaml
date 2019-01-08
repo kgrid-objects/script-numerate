@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: ScriptNumerate 104208
+  description: Sigs for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)
+servers:
+  - url: /99999/104208sig/v0.0.2
+    description: Get 104208 Sigs
+tags:
+  - name: KO Endpoints
+    description: 104208 Endpoints
+paths:
+  /rxsigs:
+    post:
+      description: Compare Rx.
+      operationId: comparerx
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/error'
+components:
+  schemas:
+    input:
+      required:
+        - rxcui
+      properties:
+        rxcui:
+          type: string
+          example: '104208'
+    output:
+      required:
+        - result
+      properties:
+        result:
+          type: string
+          example: '{"rxcui":"104208":sigs:[]}'
+    error:
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string

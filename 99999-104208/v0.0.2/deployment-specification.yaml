@@ -1,0 +1,5 @@
+endpoints:
+  /rxcompare:
+    adapterType: JAVASCRIPT
+    artifact: rxcompare.js
+    entry: rxcompare

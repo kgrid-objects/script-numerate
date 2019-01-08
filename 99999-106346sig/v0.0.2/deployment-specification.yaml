@@ -1,0 +1,5 @@
+endpoints:
+  /rxsigs:
+    adapterType: JAVASCRIPT
+    artifact: rxsigs.js
+    entry: rxsigs
