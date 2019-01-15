@@ -1,7 +1,7 @@
 var rewire = require('rewire');
 
 //Get load in the js
-var javascript = rewire('..//99999-104208/v0.0.1/model/resource/rxcompare.js');
+var javascript = rewire('../collection/99999-104208/v0.0.1/model/resource/rxcompare.js');
 
 //Load in the function
 var rxcompare = javascript.__get__("rxcompare");
