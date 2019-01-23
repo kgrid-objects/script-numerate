@@ -1,7 +1,7 @@
 {
   "@id": "v0.0.2",
   "@type": "koio:Implementation",
-  "identifier": "v0.0.2",
+  "identifier": "ark:/99999/104208sig/v0.0.2",
   "title": "ScriptNumerate 104208 Sig Implementation",
   "description": "Sigs for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)",
   "keywords": "ScriptNumerate",
