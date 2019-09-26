@@ -3,6 +3,14 @@ info:
   version: 1.0.0
   title: ScriptNumerate 104208
   description: Sigs for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)
+  license:
+    name: GNU General Public License v3 (GPL-3)
+    url: >-
+      https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)#fulltext
+  contact:
+    name: KGrid Team
+    email: kgrid-developers@umich.edu
+    url: 'http://kgrid.org'
 servers:
   - url: /99999/104208sig/v0.0.2
     description: Get 104208 Sigs
