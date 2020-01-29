@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: ScriptNumerate 106346
-  description: Prescribing Pattern for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
+  title: ScriptNumerate 197311 sig
+  description: Sigs for ACYCLOVIR 400 MG TABLET (197311)
   license:
     name: GNU General Public License v3 (GPL-3)
     url: >-
@@ -12,13 +12,13 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/106346/v0.0.2
-    description: Compare 106346 Rx
+  - url: /99999/197311sig
+    description: Get 197311 Sigs
 tags:
   - name: KO Endpoints
-    description: 106346 Endpoints
+    description: 197311 Endpoints
 paths:
-  /rxcompare:
+  /rxsigs:
     post:
       description: Compare Rx.
       operationId: comparerx
@@ -46,20 +46,18 @@ components:
   schemas:
     input:
       required:
-        - rxdata
+        - rxcui
       properties:
-        rxdata:
+        rxcui:
           type: string
-          example: 1 APPLICATION 4 TIMES DAILY
+          example: '197311'
     output:
       required:
         - result
       properties:
         result:
           type: string
-          example: >-
-            RESULT:RARE --SUMMARY: 1 APPLICATION 4 TIMES DAILY is rare within
-            102 presriptions on file ---FREQUENCY = 0.01
+          example: '{"rxcui":"197311":sigs:[]}'
     error:
       required:
         - code

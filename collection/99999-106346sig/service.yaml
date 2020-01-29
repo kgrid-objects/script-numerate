@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: ScriptNumerate 197319
-  description: Prescribing Pattern for ALLOPURINOL 100 MG TABLET (197319)
+  title: ScriptNumerate 106346 sig
+  description: Sigs for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
   license:
     name: GNU General Public License v3 (GPL-3)
     url: >-
@@ -12,13 +12,13 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/197319/v0.0.1/
-    description: Compare 197319 Rx
+  - url: /99999/106346sig
+    description: Get 106346 Sigs
 tags:
   - name: KO Endpoints
-    description: 197319 Endpoints
+    description: 104208 Endpoints
 paths:
-  /rxcompare:
+  /rxsigs:
     post:
       description: Compare Rx.
       operationId: comparerx
@@ -46,20 +46,18 @@ components:
   schemas:
     input:
       required:
-        - rxdata
+        - rxcui
       properties:
-        rxdata:
+        rxcui:
           type: string
-          example: 50 MG ONCE
+          example: '106346'
     output:
       required:
         - result
       properties:
         result:
           type: string
-          example: >-
-            RESULT:RARE --SUMMARY: 50 MG ONCE is rare within 365 presriptions on
-            file ---FREQUENCY = 0.00
+          example: '{"rxcui":"106346":sigs:[]}'
     error:
       required:
         - code

@@ -2,16 +2,15 @@
   "@id": "99999-197319sig",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/197319sig",
+  "version":"v0.0.3",
   "title": "ScriptNumerate 197319 Sig",
   "contributors": "KGRID TEAM",
   "desription": "Sigs for ALLOPURINOL 100 MG TABLET (197319)",
-  "citations": [
-    "https://citationlink"
-  ],
-  "keywords": "ScriptNumerate",
-  "hasImplementation": [
-    "99999-197319sig/v0.0.2"
-  ],
+  "citations": [""],
+  "keywords": ["ScriptNumerate"],
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
+  "hasPayload": "rxsigs.js",
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
   ]

@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/104208sig/v0.0.1/
+  - url: /99999/104208sig
     description: Get 104208 Sigs
 tags:
   - name: KO Endpoints

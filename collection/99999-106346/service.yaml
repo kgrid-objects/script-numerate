@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: ScriptNumerate 106346 sig
-  description: Sigs for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
+  title: ScriptNumerate 106346
+  description: Prescribing Pattern for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
   license:
     name: GNU General Public License v3 (GPL-3)
     url: >-
@@ -12,13 +12,13 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/106346sig/v0.0.1/
-    description: Get 106346 Sigs
+  - url: /99999/106346
+    description: Compare 106346 Rx
 tags:
   - name: KO Endpoints
-    description: 104208 Endpoints
+    description: 106346 Endpoints
 paths:
-  /rxsigs:
+  /rxcompare:
     post:
       description: Compare Rx.
       operationId: comparerx
@@ -46,18 +46,20 @@ components:
   schemas:
     input:
       required:
-        - rxcui
+        - rxdata
       properties:
-        rxcui:
+        rxdata:
           type: string
-          example: '106346'
+          example: 1 APPLICATION 4 TIMES DAILY
     output:
       required:
         - result
       properties:
         result:
           type: string
-          example: '{"rxcui":"106346":sigs:[]}'
+          example: >-
+            RESULT:RARE --SUMMARY: 1 APPLICATION 4 TIMES DAILY is rare within
+            102 presriptions on file ---FREQUENCY = 0.01
     error:
       required:
         - code

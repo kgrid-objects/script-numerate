@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: ScriptNumerate 197311
-  description: Prescribing Pattern for ACYCLOVIR 400 MG TABLET (197311)
+  title: ScriptNumerate 104208
+  description: Prescribing Pattern for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)
   license:
     name: GNU General Public License v3 (GPL-3)
     url: >-
@@ -12,11 +12,11 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/197311/v0.0.2
-    description: Compare 197311 Rx
+  - url: /99999/104208
+    description: Compare 104208 Rx
 tags:
   - name: KO Endpoints
-    description: 197311 Endpoints
+    description: 104208 Endpoints
 paths:
   /rxcompare:
     post:
@@ -50,7 +50,7 @@ components:
       properties:
         rxdata:
           type: string
-          example: 800 MG ONCE DAILY
+          example: 100 MCG DAILY
     output:
       required:
         - result
@@ -58,8 +58,8 @@ components:
         result:
           type: string
           example: >-
-            RESULT:RARE --SUMMARY: 800 MG ONCE DAILY is rare within 141
-            presriptions on file ---FREQUENCY = 0.01
+            RESULT:RARE --SUMMARY: 100 MCG DAILY is rare within 130 presriptions
+            on file ---FREQUENCY = 0.01
     error:
       required:
         - code

@@ -2,16 +2,15 @@
   "@id": "99999-104208",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/104208",
+  "version":"v0.0.3",
   "title": "ScriptNumerate 104208",
   "contributors": "KGRID TEAM",
   "desription": "Prescribing Pattern for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)",
-  "citations": [
-    "https://citationlink"
-  ],
-  "keywords": "ScriptNumerate",
-  "hasImplementation": [
-    "99999-104208/v0.0.2"
-  ],
+  "citations": [""],
+  "keywords": ["ScriptNumerate"],
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
+  "hasPayload": "rxcompare.js",
   "@context": [
     "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
   ]

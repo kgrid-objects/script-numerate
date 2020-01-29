@@ -1,52 +1,15 @@
 {
-  "template": "kotemplate",
   "project": "scriptnumerate",
-  "objects": [
-    {
-      "id": "99999-104208",
-      "version": "v0.0.1"
-    },
-    {
-      "id": "99999-106346",
-      "version": "v0.0.1"
-    },
-    {
-      "id": "99999-197311",
-      "version": "v0.0.1"
-    },
-    {
-      "id": "99999-197319",
-      "version": "v0.0.1"
-    }
-  ],
-  "kodependencies": [],
-  "runtimedependencies": [
-    {
-      "name": "Activator",
-      "version": "0.5.8",
-      "filename": "kgrid-activator-0.6.2.jar",
-      "download_url": "https://github.com/kgrid/kgrid-activator/releases/download/kgrid-activator-0.6.2/",
-      "target": ""
-    },
-    {
-      "name": "JavaScript",
-      "version": "0.0.1",
-      "filename": "javascript-adapter-0.0.1-SNAPSHOT.jar",
-      "download_url": "https://github.com/kgrid/ko-templates/releases/download/0.1/",
-      "target": "adapters/"
-    }
-  ],
   "devDependencies": {
     "jest": "^25.0.0",
     "mocha": "5.2.0",
     "rewire": "^4.0.1",
     "scripty": "1.7.2",
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.0.3",
+    "@kgrid/cli": "^0.4.3"
   },
   "scripts": {
     "test": "jest",
-    "prod": "scripty",
-    "dev": "scripty",
     "package": "scripty",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
