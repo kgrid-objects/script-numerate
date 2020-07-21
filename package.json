@@ -1,12 +1,12 @@
 {
   "project": "scriptnumerate",
   "devDependencies": {
-    "jest": "^25.0.0",
-    "mocha": "5.2.0",
+    "@kgrid/cli": "^0.4.4",
+    "jest": "^25.5.4",
+    "mocha": "^8.0.1",
     "rewire": "^4.0.1",
     "scripty": "1.7.2",
-    "vuepress": "^1.0.3",
-    "@kgrid/cli": "^0.4.3"
+    "vuepress": "^1.5.2"
   },
   "scripts": {
     "test": "jest",
