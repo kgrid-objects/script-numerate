@@ -2,7 +2,7 @@
   "@id": "99999-197311sig",
   "@type": "koio:KnowledgeObject",
   "identifier": "ark:/99999/197311sig",
-  "version":"v0.0.3",
+  "version":"v0.1.0",
   "title": "ScriptNumerate 197311 Sig",
   "contributors": "KGRID TEAM",
   "desription": "Sigs for ACYCLOVIR 400 MG TABLET (197311)",

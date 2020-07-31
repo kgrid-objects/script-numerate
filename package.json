@@ -3,21 +3,14 @@
   "devDependencies": {
     "@kgrid/cli": "^0.4.4",
     "jest": "^25.5.4",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.0",
     "rewire": "^4.0.1",
-    "scripty": "1.7.2",
     "vuepress": "^1.5.2"
   },
   "scripts": {
     "test": "jest",
-    "package": "scripty",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  },
-  "scripty": {
-    "path": "scripts",
-    "windowsPath": "scriptswin",
-    "silent": true
   },
   "engines": {
     "node": ">= 8.0.0",
