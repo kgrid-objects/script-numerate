@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: ScriptNumerate 197319
   description: Prescribing Pattern for ALLOPURINOL 100 MG TABLET (197319)
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/197319
+  - url: /99999/197319/1.0
     description: Compare 197319 Rx
 tags:
   - name: KO Endpoints

@@ -1,8 +1,8 @@
 {
-  "@id": "99999-104208sig",
+  "@id": "99999/104208sig/v1.0",
   "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/104208sig",
-  "version":"v0.1.0",
+  "identifier": "ark:/99999/104208sig/v1.0",
+  "version":"v1.0",
   "title": "ScriptNumerate 104208 Sig",
   "contributors": "KGRID TEAM",
   "desription": "Sigs for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)",

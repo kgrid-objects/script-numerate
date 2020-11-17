@@ -1,8 +1,8 @@
 {
-  "@id": "99999-197319sig",
+  "@id": "99999/197319sig/v1.0",
   "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/197319sig",
-  "version":"v0.1.0",
+  "identifier": "ark:/99999/197319sig/v1.0",
+  "version":"v1.0",
   "title": "ScriptNumerate 197319 Sig",
   "contributors": "KGRID TEAM",
   "desription": "Sigs for ALLOPURINOL 100 MG TABLET (197319)",

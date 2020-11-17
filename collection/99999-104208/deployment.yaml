@@ -1,5 +1,5 @@
-endpoints:
-  /rxcompare:
-    adapter: JAVASCRIPT
+/rxcompare:
+  post:
+    engine: javascript
     artifact: rxcompare.js
-    entry: rxcompare
+    function: rxcompare

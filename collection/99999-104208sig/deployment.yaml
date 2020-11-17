@@ -1,5 +1,5 @@
-endpoints:
-  /rxsigs:
-    adapter: JAVASCRIPT
+/rxsigs:
+  post:
+    engine: javascript
     artifact: rxsigs.js
-    entry: rxsigs
+    function: rxsigs

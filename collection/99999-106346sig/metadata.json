@@ -1,8 +1,8 @@
 {
-  "@id": "99999-106346sig",
+  "@id": "99999/106346sig/v1.0",
   "@type": "koio:KnowledgeObject",
-  "identifier": "ark:/99999/106346sig",
-  "version":"v0.1.0",
+  "identifier": "ark:/99999/106346sig/v1.0",
+  "version":"v1.0",
   "title": "ScriptNumerate 106346 Sig",
   "contributors": "KGRID TEAM",
   "desription": "Sigs for MUPIROCIN 2 % TOPICAL OINTMENT (106346)",

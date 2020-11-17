@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: ScriptNumerate 106346 sig
   description: Sigs for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/106346sig
+  - url: /99999/106346sig/1.0
     description: Get 106346 Sigs
 tags:
   - name: KO Endpoints

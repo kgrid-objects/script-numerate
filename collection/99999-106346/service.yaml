@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: ScriptNumerate 106346
   description: Prescribing Pattern for MUPIROCIN 2 % TOPICAL OINTMENT (106346)
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/106346
+  - url: /99999/106346/1.0
     description: Compare 106346 Rx
 tags:
   - name: KO Endpoints

@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: '1.0'
   title: ScriptNumerate 104208
   description: Prescribing Pattern for DIGOXIN 250 MCG/ML INJECTION SOLUTION (104208)
   license:
@@ -12,7 +12,7 @@ info:
     email: kgrid-developers@umich.edu
     url: 'http://kgrid.org'
 servers:
-  - url: /99999/104208
+  - url: /99999/104208/1.0
     description: Compare 104208 Rx
 tags:
   - name: KO Endpoints
